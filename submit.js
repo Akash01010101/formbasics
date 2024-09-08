@@ -11,8 +11,9 @@ document.getElementById("form1").addEventListener("submit",(e)=>{
       },
       body:JSON.stringify({username,password}),
   
+    }).catch(err =>{
+      console.log(err)
     })
-    
 })
 
 
