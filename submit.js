@@ -11,8 +11,12 @@ document.getElementById("form1").addEventListener("submit",(e)=>{
       },
       body:JSON.stringify({username,password}),
   
+    }).then(data =>{
+      console.log(data)
     }).catch(err =>{
       console.log(err)
+    }).finally(()=>{
+      console.log("suer regestered succesfully")
     })
 })
 
